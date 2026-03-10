@@ -4,47 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>BMI Pro — SmartCalc™ Health Intelligence & BMI Engine</title>
-    
-    <!-- FAVICON -->
-    <link rel="icon" type="image/jpeg" href="pulse.jpg?v=3.0">
+    <meta name="google-site-verification" content="google5dfafccdc6f81413" />
+    <link rel="icon" type="image/jpeg" href="pulse.jpg?v=4.0">
     <link rel="apple-touch-icon" href="pulse.jpg">
-    
     <meta name="description" content="Professional BMI analytics with medical-grade precision. Ideal weight forecasting powered by SmartCalc™ Health. WHO compliant.">
     <link rel="canonical" href="https://n1043mn1ght-web.github.io" />
-
     <style>
         :root { --primary: #2ecc71; --dark: #0f172a; --bg: #f1f5f9; --text: #1e293b; --muted: #64748b; }
         * { box-sizing: border-box; -webkit-font-smoothing: antialiased; font-family: 'Inter', sans-serif; }
         body { margin: 0; background: var(--bg); color: var(--text); overflow-x: hidden; font-size: 14px; }
-        
         header { background: var(--dark); color: white; padding: 0.6rem; text-align: center; border-bottom: 2px solid var(--primary); }
         .logo { font-size: 1rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; }
         .logo span { color: var(--primary); }
-
         .wrapper { max-width: 950px; margin: 10px auto; padding: 0 10px; display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 12px; }
         .card { background: white; border-radius: 16px; padding: 18px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); border: 1px solid #e2e8f0; }
-        
         h2 { font-size: 0.8rem; margin: 0 0 12px 0; text-transform: uppercase; color: var(--muted); border-left: 3px solid var(--primary); padding-left: 8px; }
         .control-group { margin-bottom: 12px; }
         .label-box { display: flex; justify-content: space-between; margin-bottom: 2px; }
-        label { font-size: 0.6rem; font-weight: 800; color: var(--muted); text-transform: uppercase; }
+        label { font-size: 0.65rem; font-weight: 800; color: var(--muted); text-transform: uppercase; }
         .val { font-size: 1rem; font-weight: 800; }
-
         input[type=range] { width: 100%; appearance: none; background: #e2e8f0; height: 4px; border-radius: 10px; outline: none; margin: 8px 0; }
         input[type=range]::-webkit-slider-thumb { appearance: none; width: 20px; height: 20px; background: white; border: 3px solid var(--primary); border-radius: 50%; cursor: pointer; }
-
         .res-panel { text-align: center; display: flex; flex-direction: column; justify-content: center; }
         .total-num { font-size: 3.5rem; font-weight: 900; color: var(--dark); margin: 0; letter-spacing: -3px; line-height: 1; }
         .badge { display: inline-block; padding: 4px 12px; border-radius: 50px; font-weight: 800; background: #e8f8ef; color: var(--primary); font-size: 0.8rem; margin-top: 8px; }
-
         .ideal-info { margin-top: 12px; font-size: 0.75rem; color: var(--muted); padding: 10px; background: #f8fafc; border-radius: 8px; border-left: 3px solid var(--primary); }
         .gauge { height: 6px; background: linear-gradient(90deg, #f1c40f 0%, #2ecc71 25%, #27ae60 50%, #e67e22 75%, #e74c3c 100%); border-radius: 10px; margin: 15px 0 10px; position: relative; }
         .ptr { position: absolute; top: -8px; width: 4px; height: 22px; background: var(--dark); border-radius: 2px; transition: 0.5s cubic-bezier(0.23, 1, 0.32, 1); }
-
         .eco-nav { grid-column: span 2; display: flex; justify-content: center; gap: 15px; padding: 8px; border-top: 1px solid #e2e8f0; margin-top: 5px; }
-        .eco-nav a { font-size: 0.65rem; font-weight: 800; color: var(--muted); text-decoration: none; text-transform: uppercase; }
+        .eco-nav a { font-size: 0.65rem; font-weight: 800; color: var(--muted); text-decoration: none; text-transform: uppercase; transition: 0.3s; }
         .btn { width: 100%; margin-top: 12px; padding: 10px; border: none; border-radius: 8px; background: var(--dark); color: white; font-weight: 700; cursor: pointer; font-size: 0.85rem; }
-
         .seo-article { max-width: 950px; margin: 20px auto; padding: 25px; background: white; border-radius: 16px; border: 1px solid #e2e8f0; line-height: 1.7; color: #475569; }
         @media (max-width: 700px) { .wrapper { grid-template-columns: 1fr; } .total-num { font-size: 2.8rem; } }
     </style>
@@ -62,7 +51,7 @@
             <div class="label-box"><label>Weight</label><span class="val" id="w-t">70 kg</span></div>
             <input type="range" id="w-i" min="30" max="200" value="70">
         </div>
-        <div class="ideal-info" id="ideal-msg">Analysis: Calculating ideal range...</div>
+        <div class="ideal-info" id="ideal-msg">Ideal weight range: <b>57 – 76 kg</b></div>
     </section>
     <section class="card res-panel">
         <label>Body Mass Index</label>
